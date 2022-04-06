@@ -17,17 +17,17 @@ function checkDriverAge(inputAge) {
 //function expression and using console.log
 checkAge = function checkDriverAge2(age) {
     if (Number(age) < 18) {
-        console.log("Sorry, you are too yound to drive this car. Powering off");
+        alert("Sorry, you are too yound to drive this car. Powering off");
     } else if (Number(age) > 18) {
-        console.log("Powering On. Enjoy the ride!");
+        alert("Powering On. Enjoy the ride!");
     } else if (Number(age) === 18) {
-        console.log("Congratulations on your first year of driving. Enjoy the ride!");
+        alert("Congratulations on your first year of driving. Enjoy the ride!");
     }
-    return console.log;
+    return alert;
 }
 
 //calling function declation
 checkDriverAge(age);
 
 //calling function expression
-console.log(checkAge(age))
+checkAge(age)
