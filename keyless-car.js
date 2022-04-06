@@ -1,33 +1,37 @@
 // Make a keyless car EVEN BETTER!
 
-var age = prompt("What is your age?");
-
 //function declaration and using alert
-function checkDriverAge(inputAge) {
-    if (Number(inputAge) < 18) {
-        alert("Sorry, you are too yound to drive this car. Powering off");
-    } else if (Number(inputAge) > 18) {
-        alert("Powering On. Enjoy the ride!");
-    } else if (Number(inputAge) === 18) {
-        alert("Congratulations on your first year of driving. Enjoy the ride!");
+function checkDriverAge() {
+    let age = prompt("What is your age?");
+    let msg = ''
+    if (Number(age) < 18) {
+        msg = "Sorry, you are too yound to drive this car. Powering off";
+    } else if (Number(age) > 18) {
+        msg = "Powering On. Enjoy the ride!";
+    } else if (Number(age) === 18) {
+        msg = "Congratulations on your first year of driving. Enjoy the ride!";
     }
-    return alert;
+    return msg;
 }
 
 //function expression and using console.log
-checkAge = function checkDriverAge2(age) {
+checkAge = function checkDriverAge2() {
+    let age = prompt("What is your age?");
+    let msg = ''
     if (Number(age) < 18) {
-        alert("Sorry, you are too yound to drive this car. Powering off");
+        msg = "Sorry, you are too yound to drive this car. Powering off";
     } else if (Number(age) > 18) {
-        alert("Powering On. Enjoy the ride!");
+        msg = "Powering On. Enjoy the ride!";
     } else if (Number(age) === 18) {
-        alert("Congratulations on your first year of driving. Enjoy the ride!");
+        msg = "Congratulations on your first year of driving. Enjoy the ride!";
     }
-    return alert;
+    return msg;
 }
 
 //calling function declation
-checkDriverAge(age);
+myDriver = checkDriverAge();
+alert(myDriver)
 
 //calling function expression
-checkAge(age)
+cAge = checkAge()
+console.log(cAge)
